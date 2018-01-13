@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="row">
+  <div class="col-lg-12">
+    {% if not perfil %}
+    <div class="well well-sm">Perfil não Encontrado</div>
+    {% else %}
+    <h2 style="margin-top:0">{{perfil.nome}}</h2>
+    <address>
+      <strong>{{perfil.nome_empresa}}</strong><br>
+      <abbr title="Telefone">Tel:</abbr> {{perfil.telefone}}<br>
+      <a href="mailto:{{perfil.email}}">{{perfil.email}}</a>
+    </address>
+    {% if not perfil_igual_perfil_logado %}
+    {% include "base_convidar.html" %}
+    {% endif %}
+  </div>
+  {% endif %}
+</div>
+{% endblock %}

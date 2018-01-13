@@ -1,0 +1,9 @@
+2018-01-13 02:50:34,263 - perfis.views - INFO - Hello baby
+2018-01-13 02:50:42,755 - perfis.views - INFO - Hello baby
+2018-01-13 02:51:42,900 - perfis.views - INFO - Hello baby
+2018-01-13 02:51:45,152 - perfis.views - INFO - Hello baby
+2018-01-13 02:51:45,987 - perfis.views - INFO - Hello baby
+2018-01-13 02:51:46,679 - perfis.views - INFO - Hello baby
+2018-01-13 02:51:57,795 - perfis.views - INFO - Hello baby
+2018-01-13 02:52:53,397 - perfis.views - ERROR - Chamando um log de error
+2018-01-13 02:52:53,400 - perfis.views - INFO - Chamando um log de info

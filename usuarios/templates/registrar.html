@@ -1,0 +1,36 @@
+{% extends "base_usuario.html" %}
+{% block body %}
+<form class="form-signin" role="form" action="{% url 'registrar' %}" method="POST">
+  {% csrf_token%}
+  <h2 class="form-signin-heading"> Crie seu Usuário </h2>
+  <input type="text" id="id_email" value="{{ form.email.value }}" name="email" class="form-control" placeholder="Email *" required autofocus>
+  <input type="text" id="id_nome" value="{{ form.nome.value }}" name="nome" class="form-control" placeholder="Nome *" required>
+  <input type="password" id="id_senha" name="senha" class="form-control" placeholder="Senha *" required>
+
+  <hr />
+
+  <input type="text" id="id_telefone" value="{{ form.telefone.value }}" name="telefone" class="form-control" placeholder="Telefone">
+  <input type="text" id="id_nome_empresa" value="{{ form.nome_empresa.value }}" name="nome_empresa" class="form-control" placeholder="Nome da Empresa">
+
+  <hr />
+
+  <button class="btn primary btn-lg btn-primary btn-block" type="submit" value="login">Registrar</button>
+
+  <hr />
+
+  {% if form.errors %}
+    <div class="alert alert-danger">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true" >&times;</button>
+      {{ form.non_field_errors }}
+      {% for field in form %}
+        <div class="panel-body">
+          {% if field.errors %}
+            <p><span>{{ field.label_tag }}</span>{{ field.errors }}</p>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+  Já é usuario? <a href="{% url 'login' %}">Faça login</a>
+</form>
+{% endblock %}
