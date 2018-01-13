@@ -26,80 +26,6 @@ SECRET_KEY = '13nv!i595t9dnj5dri7v--+h_+mzb@3yv4o&k7=f4v%jflw%r1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# LOGGING = {
-#     'version': 1,
-#     'disable_existing_loggers': False,
-#     'formatters': {
-#         'verbose': {
-#             'format': '%(levelname)s %(asctime)s %(module)s %(process)d %(thread)d %(message)s'
-#         },
-#         'simple': {
-#             'format': '%(levelname)s %(message)s'
-#         },
-#     },
-#     'handlers': {
-#         'file': {
-#             'level': 'INFO',
-#             'class': 'logging.FileHandler',
-#             'filename': 'debug.log',
-#         },
-#     },
-#     'loggers': {
-#         'django': {
-#             'handlers': ['file'],
-#             'level': 'DEBUG',
-#             'propagate': True,
-#         },
-#     },
-# }
-
-#
-# LOGGING = {
-#     'version': 1,
-#     'disable_existing_loggers': False,
-#     'formatters': {
-#         'verbose': {
-#             'format': '%(levelname)s %(asctime)s %(module)s %(process)d %(thread)d %(message)s'
-#         },
-#         'simple': {
-#             'format': '%(levelname)s %(message)s'
-#         },
-#     },
-#     'handlers': {
-#         'file': {
-#             'level': 'DEBUG',
-#             'class': 'logging.FileHandler',
-#             'filename': '/home/aumoraes/work/workspace-python/alura-connectedin/connectedin/debug.log',
-#         }
-#         # 'console': {
-#         #     'level': 'INFO',
-#         #     'filters': ['require_debug_true'],
-#         #     'class': 'logging.StreamHandler',
-#         #     'formatter': 'simple'
-#         # },
-#         # 'mail_admins': {
-#         #     'level': 'ERROR',
-#         #     'class': 'django.utils.log.AdminEmailHandler',
-#         #     'filters': ['special']
-#         # }
-#     },
-#     'loggers': {
-#         # 'django': {
-#         #     'handlers': ['console'],
-#         #     'propagate': True,
-#         # },
-#         # 'django.request': {
-#         #     'handlers': ['mail_admins'],
-#         #     'level': 'ERROR',
-#         #     'propagate': False,
-#         # },
-#         # 'myproject.custom': {
-#         #     'handlers': ['console', 'mail_admins'],
-#         #     'level': 'INFO',
-#         #     'filters': ['special']
-#         # }
-#     }
-# }
 ALLOWED_HOSTS = []
 
 
@@ -152,8 +78,14 @@ WSGI_APPLICATION = 'connectedin.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        #'ENGINE': 'django.db.backends.sqlite3',
+        #'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'connectedin',
+        'USER': 'root',
+        'PASSWORD': 'root',
+        'HOST': 'localhost',
+        'PORT': '3306'
     }
 }
 

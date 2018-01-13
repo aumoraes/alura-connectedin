@@ -3,10 +3,12 @@ from django.http import HttpResponse
 from perfis.models import Perfil, Convite
 from django.shortcuts import redirect
 
-from django.contrib.auth.decorators import login_required
+from django.contrib.auth.decorators import login_required, permission_required
 from django.views.decorators.http import require_http_methods
 
 from django.contrib.auth.models import User
+
+from django.http import HttpResponseForbidden
 
 import logging
 logger = logging.getLogger(__name__)
@@ -15,7 +17,7 @@ logger = logging.getLogger(__name__)
 @login_required
 @require_http_methods(["GET"])
 def index(request):
-    logger.error('Chamando um log de error')
+
 
     perfis = None
     perfil_logado = None
@@ -31,14 +33,13 @@ def index(request):
         print("Nenhum usuário logado %s" %(error))
 
 
-    logger.info('Chamando um log de info')
-
 
     return render(request, 'index.html', { 'perfis' : perfis,
    'perfil_logado' : perfil_logado})
 
 @login_required
 def exibir(request, perfil_id):
+
     perfil = None
     perfil_logado = None
     try:
@@ -57,7 +58,12 @@ def exibir(request, perfil_id):
                    'ja_eh_contato' : ja_eh_contato})
 
 @login_required
+@permission_required('perfis.add_convite', raise_exception=False)
 def convidar(request, perfil_id):
+
+    if not request.user.has_perm('perfis.add_convite'):
+        return HttpResponseForbidden('Acesso negado')
+
     perfil_a_convidar = Perfil.objects.get(id=perfil_id)
     perfil_logado = get_perfil_logado(request)
     perfil_logado.convidar(perfil_a_convidar)

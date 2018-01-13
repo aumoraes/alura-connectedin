@@ -7,3 +7,48 @@
 2018-01-13 02:51:57,795 - perfis.views - INFO - Hello baby
 2018-01-13 02:52:53,397 - perfis.views - ERROR - Chamando um log de error
 2018-01-13 02:52:53,400 - perfis.views - INFO - Chamando um log de info
+2018-01-13 03:05:32,128 - django.request - WARNING - Not Found: /favicon.ico
+2018-01-13 03:05:41,944 - perfis.views - ERROR - Chamando um log de error
+2018-01-13 03:05:41,948 - perfis.views - INFO - Chamando um log de info
+2018-01-13 03:10:51,923 - perfis.views - ERROR - Chamando um log de error
+2018-01-13 03:10:51,932 - perfis.views - INFO - Chamando um log de info
+2018-01-13 03:11:15,061 - perfis.views - ERROR - Chamando um log de error
+2018-01-13 03:11:15,065 - perfis.views - INFO - Chamando um log de info
+2018-01-13 03:11:23,701 - perfis.views - ERROR - Chamando um log de error
+2018-01-13 03:11:23,705 - perfis.views - INFO - Chamando um log de info
+2018-01-13 03:11:36,725 - perfis.views - ERROR - Chamando um log de error
+2018-01-13 03:11:36,732 - perfis.views - INFO - Chamando um log de info
+2018-01-13 03:11:39,684 - perfis.views - ERROR - Chamando um log de error
+2018-01-13 03:11:39,687 - perfis.views - INFO - Chamando um log de info
+2018-01-13 03:11:42,672 - django.request - WARNING - Forbidden (Permission denied): /perfis/2/convidar
+2018-01-13 03:13:37,287 - perfis.views - ERROR - Chamando um log de error
+2018-01-13 03:13:37,291 - perfis.views - INFO - Chamando um log de info
+2018-01-13 03:13:54,818 - perfis.views - ERROR - Chamando um log de error
+2018-01-13 03:13:54,825 - perfis.views - INFO - Chamando um log de info
+2018-01-13 03:22:34,892 - django.request - WARNING - Not Found: /favicon.ico
+2018-01-13 03:22:42,615 - perfis.views - ERROR - Chamando um log de error
+2018-01-13 03:22:42,617 - perfis.views - INFO - Chamando um log de info
+2018-01-13 03:22:45,817 - perfis.views - ERROR - Chamando um log de error
+2018-01-13 03:22:45,819 - perfis.views - INFO - Chamando um log de info
+2018-01-13 03:22:50,346 - perfis.views - ERROR - Chamando um log de error
+2018-01-13 03:22:50,348 - perfis.views - INFO - Chamando um log de info
+2018-01-13 03:23:00,092 - perfis.views - ERROR - Chamando um log de error
+2018-01-13 03:23:00,096 - perfis.views - INFO - Chamando um log de info
+2018-01-13 03:23:13,197 - perfis.views - ERROR - Chamando um log de error
+2018-01-13 03:23:13,202 - perfis.views - INFO - Chamando um log de info
+2018-01-13 03:23:15,395 - perfis.views - ERROR - Chamando um log de error
+2018-01-13 03:23:15,397 - perfis.views - INFO - Chamando um log de info
+2018-01-13 03:26:28,495 - perfis.views - ERROR - Chamando um log de error
+2018-01-13 03:26:28,499 - perfis.views - INFO - Chamando um log de info
+2018-01-13 03:27:38,257 - perfis.views - ERROR - Chamando um log de error
+2018-01-13 03:27:38,260 - perfis.views - INFO - Chamando um log de info
+2018-01-13 03:27:53,377 - django.request - WARNING - Not Found: /favicon.ico
+2018-01-13 03:27:54,013 - django.request - WARNING - Not Found: /favicon.ico
+2018-01-13 03:27:54,328 - django.request - WARNING - Not Found: /favicon.ico
+2018-01-13 03:27:54,623 - django.request - WARNING - Not Found: /favicon.ico
+2018-01-13 03:27:55,376 - django.request - WARNING - Not Found: /favicon.ico
+2018-01-13 03:28:04,734 - perfis.views - ERROR - Chamando um log de error
+2018-01-13 03:28:04,736 - perfis.views - INFO - Chamando um log de info
+2018-01-13 03:52:59,545 - django.request - WARNING - Not Found: /favicon.ico
+2018-01-13 03:54:08,735 - perfis.views - ERROR - Chamando um log de error
+2018-01-13 03:54:08,737 - perfis.views - INFO - Chamando um log de info
